@@ -1,0 +1,13 @@
+#cloud-config
+users:
+  - default
+  - name: olive
+    Gecos: Olive
+    passwd: $6$gsRqVjJo$XM9OEn/P.4Q5otjz4fJ/G9KEvR1SzPRplcpvaVnyzCpVHD9SenUOSyxaq9.sT4Nm9wYTjqm4sYEp86vlDe1Dh1
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDUOlHSe5llOW9zD8oOqZOM/2La7mnSy/kvVNgpyKdt9 olive@alienware
+    sudo: ALL=(ALL) NOPASSWD:ALL
+
+packages:
+  - znc
+  - git
